@@ -17,7 +17,7 @@ To run the SDK you will need **Java 1.8+**.
 # Getting Started
 
 ##### Before you begin, you need an Fort account information 
-* Merchant id
+* Merchant identifier
 * Merchant access code
 * SHA request phrase
 * SHA response phrase
@@ -36,7 +36,7 @@ mvn clean install
   <dependency>
     <groupId>com.payfort</groupId>
     <artifactId>java-sdk</artifactId>
-    <version>1.0</version>
+    <version>1.0-beta</version>
   </dependency>
 
 ```
@@ -57,7 +57,7 @@ public class App {
 
     public static void main(String[] args) {
         // Replace parameter with your own
-        FortAccount configuration = new FortAccount("accessCode", "merchantId", "sharequest", "sharesponse");
+        FortAccount configuration = new FortAccount("accessCode", "merchant identifier", "sharequest", "sharesponse");
 
         FortSDK fort = new FortSDK(configuration, FortEnvironment.SAND_BOX);
 
